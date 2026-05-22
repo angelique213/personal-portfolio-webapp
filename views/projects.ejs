@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <nav>
+    <a href="/">Home</a>
+    <a href="/projects">Projects</a>
+    <a href="/contact">Contact</a>
+  </nav>
+
+  <!-- Projects section -->
+  <section class="projects-page">
+
+    <h1>My Projects</h1>
+
+    <!-- Container for all projects -->
+    <div class="projects-container">
+
+      <!-- Loops through each project -->
+      <% projects.forEach(function(project) { %>
+
+        <div class="project-card">
+
+          <!-- Project image -->
+          <img
+            src="/images/<%= project.image %>"
+            alt="<%= project.name %>"
+            class="project-image"
+          >
+
+          <!-- Project name -->
+          <h2><%= project.name %></h2>
+
+          <!-- Project description -->
+          <p><%= project.description %></p>
+
+          <!-- Technologies -->
+          <h3>Technologies Used:</h3>
+
+          <p><%= project.technologies %></p>
+
+          <!-- GitHub button -->
+          <a href="<%= project.github %>" target="_blank">
+
+            <button>View Project</button>
+
+          </a>
+
+        </div>
+
+      <% }); %>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Angelique Legaspi Portfolio</p>
+  </footer>
+
+</body>
+</html>
