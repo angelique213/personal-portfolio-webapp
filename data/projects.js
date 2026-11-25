@@ -32,7 +32,18 @@ const projects = [
     technologies: "HTML, CSS, JavaScript",
     image: "weatherfit.png",
     github: "https://honamig.github.io/weatherFit/"
-  }
+  },
+
+
+{
+  name: "Ralli – Social Media App",
+  description: "A social media web application where users can create posts, like posts, add comments, and interact with the community. I built this project using React and Vite.",
+  technologies: "React, JavaScript, HTML, CSS, Vite",
+  image: "ralli.png",
+  github: "https://github.com/angelique213/Ralli",
+  live: "https://ralli-three.vercel.app/login"
+},
+
 
 ];
 
